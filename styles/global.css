@@ -5,5 +5,39 @@
 }
 
 :root {
-    
+    --color-brand-light: #59B2FF;
+    --color-brand-mid: #3487CF;
+    --color-brand-dark: #1D6FB6;
+    --color-purple: #B259FF;
+    --color-fuschia: #FF59F9;
+    --color-pink: #FF598B;
+    --color-organge: #FF8B59;
+    --color-yellow: #FFCD59;
+    --color-lime: #E1FF59;
+    --color-green: #59FF91;
+    --color-cyan: #59FFF9;
+    --color-navy: #6A59FF;
+    --color-danger: #FF5959;
+    --color-input-base: #1C1F21;
+    --color-input-stroke: #363B40;
+    --color-input-placeholder: #869198;
+    --colorshape-background: #131516;
+    --color-shape-body: #212427;
+    --color-chape-button: #2D3136;
+    --color-shape-hover: #383D42;
+    --color-text-body: #C8CDD0;
+    --color-text-heading: #F9F9F9;
+
+    --font-family-leckerliOne: "Leckerli One", cursive;
+    --text-heading-logo: 400 40px var(--font-family-leckerliOne);
+    --font-family-baloo2: "Baloo 2", sans-serif;
+    --text-heading-md: 700 28px var(--font-family-baloo2);
+    --text-heading-sm: 700 18px var(--font-family-baloo2);
+    --font-family-openSans: "Open Sans", sans-serif;
+    --text-regular: 400 16px var(--font-family-openSans);
+    --text-semiBold: 400 16px var(--font-family-openSans);
+    --text-sm-regular: 400 14px var(--font-family-openSans);
+    --text-sm-semiBold: 400 14px var(--font-family-openSans);
+    --text-xs-regular: 400 12px var(--font-family-openSans);
+    --text-xs-semiBold: 400 12px var(--font-family-openSans);
 }
