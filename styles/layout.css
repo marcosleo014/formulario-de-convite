@@ -1,0 +1,27 @@
+body {
+    background-color: var(--color-shape-background);
+    color: var(--color-text-body);
+}
+
+.container-page {
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+}
+
+#header-page {
+    flex-grow: 420;
+    flex-basis: 420px;
+    height: 100%;
+    position: sticky;
+    top: 20px;
+    margin: 20px 0 20px 20px;
+    padding: 32px;
+}
+
+main {
+    flex-grow: 860;
+    flex-basis: 860px;
+    margin: 20px;
+    padding: 80px 130px;
+}
