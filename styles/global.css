@@ -35,7 +35,7 @@
     --text-heading-sm: 700 18px var(--font-family-baloo2);
     --font-family-openSans: "Open Sans", sans-serif;
     --text-regular: 400 16px var(--font-family-openSans);
-    --text-semiBold: 400 16px var(--font-family-openSans);
+    --text-light: 300 16px var(--font-family-openSans);
     --text-sm-regular: 400 14px var(--font-family-openSans);
     --text-sm-semiBold: 400 14px var(--font-family-openSans);
     --text-xs-regular: 400 12px var(--font-family-openSans);
