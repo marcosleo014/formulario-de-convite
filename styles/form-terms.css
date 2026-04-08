@@ -1,0 +1,25 @@
+.fieldset-terms {
+    border-top: 1px solid var(--color-input-stroke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 40px;
+}
+
+.input-terms {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    div {
+        width: 20px;
+        height: 20px;
+        background-image: url(../assets/icons/box.svg);
+    }
+    input:checked + div {
+        background-image: url(../assets/icons/box-actived.svg);
+    }
+    p {
+        font: var(--text-sm-regular);
+    }
+}

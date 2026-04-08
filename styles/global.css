@@ -11,7 +11,7 @@
     --color-purple: #B259FF;
     --color-fuschia: #FF59F9;
     --color-pink: #FF598B;
-    --color-organge: #FF8B59;
+    --color-orange: #FF8B59;
     --color-yellow: #FFCD59;
     --color-lime: #E1FF59;
     --color-green: #59FF91;
@@ -23,21 +23,44 @@
     --color-input-placeholder: #869198;
     --color-shape-background: #131516;
     --color-shape-body: #212427;
-    --color-chape-button: #2D3136;
+    --color-shape-button: #2D3136;
     --color-shape-hover: #383D42;
     --color-text-body: #C8CDD0;
     --color-text-heading: #F9F9F9;
 
     --font-family-leckerliOne: "Leckerli One", cursive;
     --text-heading-logo: 400 40px var(--font-family-leckerliOne);
+
     --font-family-baloo2: "Baloo 2", sans-serif;
     --text-heading-md: 700 28px var(--font-family-baloo2);
     --text-heading-sm: 700 18px var(--font-family-baloo2);
+
     --font-family-openSans: "Open Sans", sans-serif;
     --text-regular: 400 16px var(--font-family-openSans);
     --text-light: 300 16px var(--font-family-openSans);
     --text-sm-regular: 400 14px var(--font-family-openSans);
-    --text-sm-semiBold: 400 14px var(--font-family-openSans);
+    --text-sm-semiBold: 600 14px var(--font-family-openSans);
     --text-xs-regular: 400 12px var(--font-family-openSans);
     --text-xs-semiBold: 400 12px var(--font-family-openSans);
+}
+
+body {
+    background-color: var(--color-shape-background);
+    font: var(--text-regular);
+    color: var(--color-text-body);
+}
+
+h1 {
+    font: var(--text-heading-logo);
+    color: var(--color-pink);
+}
+h2 {
+    font: var(--text-heading-md);
+    color: var(--color-text-heading);
+    margin-bottom: 40px;
+}
+
+a {
+    font: var(--text-sm-semiBold);
+    color: var(--color-brand-light);
 }
