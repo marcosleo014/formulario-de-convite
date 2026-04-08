@@ -1,16 +1,18 @@
 .preferences {
     display: grid;
     gap: 28px;
-    .container-customization>label {
-        display: block;
-        margin-bottom: 16px;
-    }
+}
+
+.preferences .container-customization > label {
+    display: block;
+    margin-bottom: 16px;
 }
 
 .container-inputs-colors {
     display: flex;
     justify-content: space-between;
 }
+
 .radio-color {
     position: relative;
     width: 40px;
@@ -22,59 +24,73 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    &> * {
-        cursor: pointer;
-    }
-    div {
-        border-radius: 9999px;
-        width: 28px;
-        height: 28px;
-    }
-    &:hover{
-        background-color: var(--color-input-stroke);
-        div {
-            transform: scale(1.2);
-            transition: 0.1s;
-        }
-    }
-    &:has(:checked) {
-        border: 3px solid var(--color-brand-light);
-    }
 }
-.container-inputs-colors {
-    .radio-color:nth-child(1) div {
-        background-color:var(--color-brand-light);
-    }
-    .radio-color:nth-child(2) div {
-        background-color:var(--color-navy);
-    }
-    .radio-color:nth-child(3) div {
-        background-color:var(--color-purple);
-    }
-    .radio-color:nth-child(4) div {
-        background-color:var(--color-fuschia);
-    }
-    .radio-color:nth-child(5) div {
-        background-color:var(--color-pink);
-    }
-    .radio-color:nth-child(6) div {
-        background-color:var(--color-danger);
-    }
-    .radio-color:nth-child(7) div {
-        background-color:var(--color-orange);
-    }
-    .radio-color:nth-child(8) div {
-        background-color:var(--color-yellow);
-    }
-    .radio-color:nth-child(9) div {
-        background-color:var(--color-lime);
-    }
-    .radio-color:nth-child(10) div {
-        background-color:var(--color-green);
-    }
-    .radio-color:nth-child(11) div {
-        background-color:var(--color-cyan);
-    }
+
+.radio-color > * {
+    cursor: pointer;
+}
+
+.radio-color div {
+    border-radius: 9999px;
+    width: 28px;
+    height: 28px;
+}
+
+.radio-color:hover {
+    background-color: var(--color-input-stroke);
+}
+
+.radio-color:hover div {
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+.radio-color:has(input:checked) {
+    border: 3px solid var(--color-brand-light);
+}
+
+.container-inputs-colors .radio-color:nth-child(1) div {
+    background-color: var(--color-brand-light);
+}
+
+.container-inputs-colors .radio-color:nth-child(2) div {
+    background-color: var(--color-navy);
+}
+
+.container-inputs-colors .radio-color:nth-child(3) div {
+    background-color: var(--color-purple);
+}
+
+.container-inputs-colors .radio-color:nth-child(4) div {
+    background-color: var(--color-fuschia);
+}
+
+.container-inputs-colors .radio-color:nth-child(5) div {
+    background-color: var(--color-pink);
+}
+
+.container-inputs-colors .radio-color:nth-child(6) div {
+    background-color: var(--color-danger);
+}
+
+.container-inputs-colors .radio-color:nth-child(7) div {
+    background-color: var(--color-orange);
+}
+
+.container-inputs-colors .radio-color:nth-child(8) div {
+    background-color: var(--color-yellow);
+}
+
+.container-inputs-colors .radio-color:nth-child(9) div {
+    background-color: var(--color-lime);
+}
+
+.container-inputs-colors .radio-color:nth-child(10) div {
+    background-color: var(--color-green);
+}
+
+.container-inputs-colors .radio-color:nth-child(11) div {
+    background-color: var(--color-cyan);
 }
 
 .tema {
@@ -82,6 +98,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
 }
+
 .radio-tema {
     display: flex;
     flex-direction: column;
@@ -93,28 +110,35 @@
     background-color: var(--color-shape-button);
     height: 103px;
     cursor: pointer;
-    img {
-        border-radius: 4px;
-        /* width: 126px; */
-        &:hover {
-            transform: scale(1.05);
-            translate: 0 1.6px;
-            transition: 0.1s;
-        }
-    }
-    span {
-        font: var(--text-sm-regular);
-        color: var(--color-text-heading);
-    }
-    &:has(:checked) {
-        border: 2px solid var(--color-brand-light);
-    }
+    min-width: 0;
 }
 
-.switch-wrapper>span {
+.radio-tema img {
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
+.radio-tema img:hover {
+    transform: scale(1.05);
+    translate: 0 1.6px;
+    transition: 0.1s;
+}
+
+.radio-tema span {
+    font: var(--text-sm-regular);
+    color: var(--color-text-heading);
+}
+
+.radio-tema:has(input:checked) {
+    border: 2px solid var(--color-brand-light);
+}
+
+.switch-wrapper > span {
     display: block;
     margin-bottom: 16px;
 }
+
 .switch-wrapper label {
     position: relative;
     display: block;
@@ -124,57 +148,64 @@
     border: 1px solid var(--color-input-stroke);
     background-color: var(--color-input-base);
     cursor: pointer;
-    &> * {
-        cursor: pointer;
-    }
-    &:has(:checked) {
-        background-color: var(--color-brand-light);
-        &::before {
-            transform: translateX(30px);
-        }
-    }
-    &::before {
-        content: "";
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        background-color: var(--color-text-heading);
-        border-radius: 999px;
-        top: 3px;
-        left: 4px;
-        transition: 0.3s;
-    }
 }
-.switch-wrapper>div {
+
+.switch-wrapper label > * {
+    cursor: pointer;
+}
+
+.switch-wrapper label:has(input:checked) {
+    background-color: var(--color-brand-light);
+}
+
+.switch-wrapper label:has(input:checked)::before {
+    transform: translateX(30px);
+}
+
+.switch-wrapper label::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-text-heading);
+    border-radius: 999px;
+    top: 3px;
+    left: 4px;
+    transition: 0.3s;
+}
+
+.switch-wrapper > div {
     display: flex;
     align-items: center;
     gap: 12px;
-    label:not(input:checked) + span:nth-child(2) {
-        &::after {
-            content: "Escuro";
-        }
-    }
-    label:has(input:checked) + span:nth-child(2) {
-        &::after {
-            content: "Claro";
-        }
-    }
 }
 
-.group-file>span {
+.switch-wrapper > div span::after {
+    content: "Escuro";
+}
+
+.switch-wrapper > div label:has(input:checked) + span::after {
+    content: "Claro";
+}
+
+.group-file > span {
     display: block;
     margin-bottom: 16px;
 }
+
 .input-file {
     position: relative;
     display: flex;
     align-items: center;
     gap: 12px;
     cursor: pointer;
-    button, span {
-        cursor: pointer;
-    }
 }
+
+.input-file button,
+.input-file span {
+    cursor: pointer;
+}
+
 .button-file {
     background-color: var(--color-shape-button);
     border: none;
@@ -188,6 +219,7 @@
     justify-content: center;
     gap: 8px;
 }
+
 .button-file::before {
     content: "";
     height: 16px;
@@ -201,4 +233,5 @@
     display: grid;
     grid-template-columns: 176fr 368fr;
     gap: 16px;
+    min-width: 0;
 }

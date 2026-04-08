@@ -1,21 +1,55 @@
 .container-page {
+    width: min(100%, 1280px);
     max-width: 1280px;
-    margin-inline: auto;
+    margin: 0 auto;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 420fr 860fr;
+    grid-template-columns: minmax(0, 420fr) minmax(0, 860fr);
+    gap: 20px;
+}
+
+.main-card,
+.form-content,
+.event-details,
+.fieldset-contatos,
+.tema,
+.group-customization,
+.container-inputs,
+.container-inputs-colors {
+    min-width: 0;
 }
 
 .main-card {
     position: sticky;
     top: 20px;
     height: 728px;
-    margin: 20px 0 20px 20px;
     padding: 32px;
 }
 
 .form-content {
-    margin: 20px;
     padding: 80px 130px;
     background-color: var(--color-shape-body);
     border-radius: 12px;
+}
+
+@media (max-width: 1080px) {
+    .container-page {
+        grid-template-columns: 1fr;
+    }
+
+    .main-card {
+        position: static;
+        top: auto;
+        height: auto;
+    }
+
+    .form-content {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .form-content {
+        padding: 24px 16px;
+    }
 }

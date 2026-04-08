@@ -48,6 +48,13 @@ body {
     background-color: var(--color-shape-background);
     font: var(--text-regular);
     color: var(--color-text-body);
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 h1 {

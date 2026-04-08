@@ -27,30 +27,41 @@ label>span:nth-child(1), .title-label {
 }
 
 input {
-    padding: 13px 16px;
-}
-textarea {
-    padding: 16px;
-    height: 136px;
-    resize: none;
-}
-input, textarea {
     width: 100%;
+    padding: 13px 16px;
     border: 1px solid var(--color-input-stroke);
     border-radius: 8px;
     background-color: var(--color-input-base);
     font: inherit;
     color: var(--color-text-heading);
-    &::placeholder{
-        color: var(--color-input-placeholder);
-    }
-    &:focus {
-        border-color: var(--color-brand-light);
-        outline: none;
-    }
 }
 
-input[type="radio"], [type="checkbox"], [type="file"] {
+textarea {
+    width: 100%;
+    padding: 16px;
+    height: 136px;
+    resize: none;
+    border: 1px solid var(--color-input-stroke);
+    border-radius: 8px;
+    background-color: var(--color-input-base);
+    font: inherit;
+    color: var(--color-text-heading);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-input-placeholder);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-brand-light);
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="file"] {
     position: absolute;
     opacity: 0;
 }
@@ -66,7 +77,7 @@ button[type="submit"] {
     background-color: var(--color-brand-dark);
     border-radius: 8px;
     border: none;
-    font: 600 16px var(--font-family-openSans);;
+    font: 600 16px var(--font-family-openSans);
     color: var(--color-text-heading);
     cursor: pointer;
 }
